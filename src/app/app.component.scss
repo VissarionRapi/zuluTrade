@@ -1,0 +1,27 @@
+.example-spacer {
+    flex: 1 1 auto;
+  }
+
+.drawer-container{
+    height: 105vh;
+}
+
+.movie-list-menu{
+    width: 250px;
+}
+
+.movie-list-menu .mat-drawer-inner-container {
+    overflow: hidden;
+}
+
+.search-input-field {
+    padding-bottom: 2px !important;
+}
+
+.seach-movie-input{
+    min-width: 300px;
+}
+
+.seach-movie-input mat-icon{
+    cursor: pointer;
+}

@@ -1,0 +1,5 @@
+<mat-selection-list #moviesList [multiple]="false">
+    <mat-list-option *ngFor="let movie of movies" [value]="movie">  
+        <a routerLink="/movie/{{movie.id}}" routerLinkActive="active" class="movie-link">{{movie.title}}</a>
+    </mat-list-option>
+</mat-selection-list>

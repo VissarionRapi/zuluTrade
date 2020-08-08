@@ -1,0 +1,24 @@
+<div fxLayout.gt-lg="row" fxLayout.gt-md="column" *ngIf="movieDetails != null" class="movie-detail-container">
+    <div fxFlex="30">
+        <div style="text-align:center">
+            <img class="lazy-loaded" src="https://image.tmdb.org/t/p/w400/{{movieDetails.poster_path}}"
+                data-lazy-type="image" title="{{movieDetails.original_title}}">
+        </div>
+    </div>
+    <div fxFlex="70">
+        <div style="text-align:center">
+            <h1>
+                {{movieDetails.original_title}}
+            </h1>
+            <p>
+                {{movieDetails.overview}}
+            </p>
+            <h2>
+                Average Rating
+                ({{movieDetails.vote_average}})
+            </h2>
+            <star-rating value="{{movieDetails.vote_average}}" totalstars="10" checkedcolor="red" uncheckedcolor="black"
+                size="24px" readonly="false" (rate)="onRate($event)"></star-rating>
+        </div>
+    </div>
+</div>
